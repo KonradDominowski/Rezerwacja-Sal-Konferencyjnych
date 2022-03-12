@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="POST">
+    {% csrf_token %}
+    <br>
+<label>
+  Nazwa sali:
+  <input type="text"
+         name="roomName">
+</label>
+    <br>
+<label>
+  Pojemność:
+  <input type="number"
+         name="roomCapacity"
+         step="1">
+</label>
+    <br>
+<label>
+    Projektor
+     <input type="checkbox" name="projector" value="True">
+</label>
+    <br>
+<label>
+  <input type="submit" value="Wyślij">
+</label>
+</form>
+
+</body>
+</html>

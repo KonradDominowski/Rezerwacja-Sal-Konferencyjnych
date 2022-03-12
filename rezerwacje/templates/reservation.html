@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="POST">
+    {% csrf_token %}
+    <br>
+<label>
+  Data rezerwacji:
+  <input type="date"
+         name="reservationDate">
+</label>
+    <br>
+<label>
+  Komentarz:
+  <input type="text"
+         name="reservationComment">
+</label>
+    <br>
+<label>
+  <input type="submit" value="Zarezerwuj">
+</label>
+</form>
+
+</body>
+</html>
